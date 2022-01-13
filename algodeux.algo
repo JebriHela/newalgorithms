@@ -1,0 +1,19 @@
+ALGORITHM somme_list
+VAR
+    tab1, tab2:ARRAY_OF INTEGER[length];
+    sum,el,i:integer;
+BEGIN
+     FOR i FROM 0 TO tab1.lenght STEP step  DO
+        Read(tab1[i]);
+    END_FOR
+     FOR i FROM 0 TO tab2.lenght STEP step  DO
+        Read(tab2[i]);
+    END_FOR
+IF (tab1[i]<>tab2[i]) THEN
+    sum:=tab1[i]+tab2[i];
+    write("somme des valeurs :")
+ELSE
+    el:=tab[i]
+     write("list des valeurs :")
+END_IF
+END

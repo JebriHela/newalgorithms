@@ -1,0 +1,29 @@
+ALGORITHM somme_hachage
+VAR
+    htab : HASH_TABLE<INTEGER,INTEGER>;
+   i,el : INTEGER;
+   count:=1:INTEGER;
+   sum:=0:INTEGER;
+   tab1, tab2:ARRAY_OF INTEGER[length];
+BEGIN
+    FOR i FROM 0 TO tab1.lenght STEP step  DO
+        Read(tab1[i]);
+    END_FOR
+     FOR i FROM 0 TO tab2.lenght STEP step  DO
+        Read(tab2[i]);
+    END_FOR
+FOR i FROM 0 TO tab1.lenght STEP step  DO
+     htab.insert(tab1[i],count);
+END_FOR
+FOR i FROM 0 TO tab2.lenght STEP step  DO
+    IF (htab.lookup==true) THEN
+        htab.insert(tab2[i],count+1)
+        BREAK
+    END_IF
+    Else
+    el:=htab[i]
+END_FOR
+sum:=htab[i]++
+write("somme des valeurs :")
+write("list des valeurs :")
+END
